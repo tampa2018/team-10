@@ -17,5 +17,9 @@ def home3():
 def home4():
     return render_template('admin.html')
 
+@app.route('/zoning_code/')
+def home5():
+    return render_template('zoning_codes.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
