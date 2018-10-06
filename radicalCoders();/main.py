@@ -21,5 +21,9 @@ def home4():
 def home5():
     return render_template('zoning_codes.html')
 
+@app.route('/donate/')
+def home6():
+    return render_template('donation.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
